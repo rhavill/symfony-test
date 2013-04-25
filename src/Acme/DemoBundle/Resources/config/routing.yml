@@ -1,0 +1,8 @@
+acme_demo_post:
+    resource: "@AcmeDemoBundle/Resources/config/routing/post.yml"
+    prefix:   /post
+
+acme_demo_comment:
+    resource: "@AcmeDemoBundle/Resources/config/routing/comment.yml"
+    prefix:   /comment
+

@@ -1,0 +1,30 @@
+comment:
+    pattern:  /
+    defaults: { _controller: "AcmeDemoBundle:Comment:index" }
+
+comment_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "AcmeDemoBundle:Comment:show" }
+
+comment_new:
+    pattern:  /new
+    defaults: { _controller: "AcmeDemoBundle:Comment:new" }
+
+comment_create:
+    pattern:  /create
+    defaults: { _controller: "AcmeDemoBundle:Comment:create" }
+    requirements: { _method: post }
+
+comment_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "AcmeDemoBundle:Comment:edit" }
+
+comment_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "AcmeDemoBundle:Comment:update" }
+    requirements: { _method: post|put }
+
+comment_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "AcmeDemoBundle:Comment:delete" }
+    requirements: { _method: post|delete }
