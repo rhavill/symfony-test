@@ -8,7 +8,6 @@ use Acme\DemoBundle\Entity\Comment;
 class CommentListener {
     public function onFlush(OnFlushEventArgs $args)
     {
-xdebug_break();    
         $em = $args->getEntityManager();
         $uow = $em->getUnitOfWork();
     
